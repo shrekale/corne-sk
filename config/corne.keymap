@@ -14,29 +14,6 @@
 #define THIRD   3
 
 / {
-        combos {
-        compatible = "zmk,combos";
-        
-        combo_rshft {
-            timeout-ms = <50>;
-            key-positions = <34 35>;
-            bindings = <&kp RSHFT>;
-        };
-
-        combo_del {
-            timeout-ms = <50>;
-            key-positions = <10 11>;
-            bindings = <&kp DEL>;
-        };
-
-        combo_caps {
-            timeout-ms = <50>;
-            key-positions = <24 25>;
-            bindings = <&kp CAPS>;
-        };
-        
-     };
-
         keymap {
                 compatible = "zmk,keymap";
 
@@ -53,13 +30,12 @@
               &kp LGUI &to DEFAULT &kp RET   &kp SPACE &to FIRST &kp RALT
                         >;
                 };
-
                 FIRST {
 // -----------------------------------------------------------------------------------------
-// |  TAB |   1    |   2   |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0   | DEL  |
-// | CTRL |  PUP   |  PDN  | HME | END |     |   | LFT | DWN |  UP | RGT | INS  |      |
-// | SHFT |  BRUP  | BRDN  |     |     |     |   | MNU | VDN | VUP | PP  | PREV | NEXT |
-//                         | GUI |     | ENT |   | SPC |     | ALT |
+// |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | SHFT |     |     |     |     |     |   | MNU | VDN | VUP |     |     |      |
+//                    | GUI |     | ENT |   | SPC |     | ALT |
                        bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6      &kp N7         &kp N8        &kp N9    &kp N0      &kp DEL
    &kp LCTRL  &kp PG_DN    &kp PG_UP    &kp HOME     &kp END      &trans         &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT &kp INS     &trans
