@@ -61,8 +61,8 @@
 // | SHFT  | BRI_DN | BRI_UP | MCTR | SRCH | VTG |   | MUT | VDN | VUP |     |     |      |
 //                           | GUI  |      | ENT |   | SPC |     | ALT |
                        bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3                            &kp N4          &kp N5                       &kp N6      &kp N7         &kp N8        &kp N9    &kp N0      &kp DEL
-   &kp LCTRL  &kp PG_DN    &kp PG_UP    &kp HOME                          &kp END         &trans                       &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT &kp INS     &trans
+   &kp TAB    &kp N1       &kp N2       &kp N3                            &kp N4          &kp N5                       &kp N6      &kp N7         &kp N8        &kp N9    &kp N0      &kp BSPC
+   &kp LCTRL  &kp PG_DN    &kp PG_UP    &kp HOME                          &kp END         &trans                       &kp LEFT    &kp DOWN       &kp UP        &kp RIGHT &kp INS     &kp DEL
    &kp LSHFT  &kp C_BRI_DN &kp C_BRI_UP &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS &kp C_AC_SEARCH &kp C_AC_VIEW_TOGGLE         &kp C_MUTE  &kp C_VOL_DN   &kp C_VOL_UP  &kp C_PP  &kp C_PREV  &kp C_NEXT
                           	        &kp LGUI                          &to DEFAULT     &kp RET                      &kp SPACE   &to SECOND   &kp RALT
                         >;
